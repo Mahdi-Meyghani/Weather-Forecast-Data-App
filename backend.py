@@ -9,8 +9,15 @@ def get_data(city, forcast_days=1, kind="Temperature"):
     response = requests.get(url)
     content = response.json()
 
+    filtered_content = content["list"]
+    nr_values = 8 * forcast_days
+    filtered_content = filtered_content[:nr_values]
 
-    return content
+    if kind == "Temperature":
+        filtered_content = [value["main"]["temp"] for value in filtered_content]
+
+
+    return filtered_content
 
 
 if __name__ == "__main__":
