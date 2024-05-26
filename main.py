@@ -25,4 +25,5 @@ if place:
 
     if option == "Sky":
         weathers = [value["weather"][0]["main"] for value in filtered_content]
+        print(weathers)
         st.image()
