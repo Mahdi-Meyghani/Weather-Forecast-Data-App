@@ -16,6 +16,8 @@ def get_data(city, forcast_days=1, kind="Temperature"):
     if kind == "Temperature":
         filtered_content = [value["main"]["temp"] for value in filtered_content]
 
+    if kind == "Sky":
+        filtered_content = [value["weather"][0]["main"] for value in filtered_content]
 
     return filtered_content
 
