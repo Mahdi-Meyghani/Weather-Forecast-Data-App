@@ -32,7 +32,7 @@ Contributions are what make the open-source community such an amazing place to l
 
 ## Contact
 
-Your Name - your-email@example.com
+Mahdi Meyghani - mahdimeyghani02@gmail.com
 
 Project Link: https://weather-forecast-for-any-city.streamlit.app
 
